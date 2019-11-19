@@ -1,0 +1,51 @@
+/* 标题区域，60*470，内容区域（图片）590*470 */
+.ctboxs {
+	width: 830px;/* 60*4+590 */
+	height: 470px;
+	position: relative;
+	overflow: hidden;
+	border:5px solid green;
+}
+.ctboxs .ctbox {
+	width:650px;/* 60+590 */
+	height: 470px;
+	display: flex;
+	position: absolute;
+	top:0;
+
+}
+.ctboxs .ct1 {
+	left:0;
+	transition:3s;
+}
+.ctboxs .ct2 {
+	left:650px;
+	transition:3s;
+}
+.ctboxs .ct3 {
+	left:710px;
+	transition:3s;
+}
+.ctboxs .ct4 {
+	left:770px;
+	transition:3s;
+}
+.ctboxs .ctbox .title {
+	font-size: 22px;
+	padding:140px 19px 0;/* 60-32/2让文字在中间 */
+	line-height: 34px;
+	color:#fff;
+	cursor:pointer;
+}
+.ctboxs .ct1 .title{
+	background: rgb(0,0,127);
+}
+.ctboxs .ct2 .title{
+	background: rgb(238,136,0);
+}
+.ctboxs .ct3 .title{
+	background:green;
+}
+.ctboxs .ct4 .title{
+	background:red;
+}
